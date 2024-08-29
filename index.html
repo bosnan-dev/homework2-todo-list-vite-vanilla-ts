@@ -1,13 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0" />
+          <title>TODO LIST</title>
+          <link rel="stylesheet" href="src/style.css" />
+          <link
+               href="https://fonts.googleapis.com/icon?family=Material+Icons"
+               rel="stylesheet" />
+     </head>
+     <body>
+          <!-- Navbar -->
+          <nav>
+               <h2>TODO List Application</h2>
+               <button id="theme-toggle">
+                    <span class="material-icons" id="theme-icon">wb_sunny</span>
+                    Light Theme
+               </button>
+          </nav>
+
+          <br /><br />
+
+          <div id="app">
+               <form id="new-task-form">
+                    <label for="new-task-input">Add a New Task</label>
+                    <input
+                         type="text"
+                         id="new-task-input"
+                         placeholder="New Task..."
+                         required />
+                    <button type="submit">Add Task</button>
+               </form>
+
+               <h1>List</h1>
+
+               <ul id="task-list">
+                    <li>
+                         <span><b>Status</b></span>
+                         <span><b>Title</b></span>
+                         <span><b>Options</b></span>
+                    </li>
+               </ul>
+          </div>
+
+          <footer>
+               <b>Brayan Córdova <br /></b>
+               <b>&copy; 2024 <br /></b>
+               <i>All rights reserved.</i>
+          </footer>
+          <script type="module" src="src/main.ts"></script>
+     </body>
 </html>
